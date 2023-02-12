@@ -1,0 +1,31 @@
+{
+  "name": "angularjs-typescript-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "http-server dist -p 3000",
+    "dev": "cross-env NODE_ENV=development webpack serve",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "angular": "1.8.3",
+    "axios": "^1.2.2",
+    "clean-terminal-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "glob": "^8.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
+    "rimraf": "^4.1.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@types/angular": "1.8.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "prettier": "^2.8.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
